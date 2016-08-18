@@ -33,7 +33,6 @@
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
-
             </LinearLayout>
             <LinearLayout
                 android:layout_weight="5"
@@ -54,7 +53,52 @@
                 android:layout_height="match_parent"></LinearLayout>
         </LinearLayout>
     </FrameLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+        <LinearLayout
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="15"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="6"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/heart_view01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/lock_text_02"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:text="3221"
+                android:layout_weight="6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/lock_text_03"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:text="다운로드수 : 20"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:background="#ffffff"
         android:layout_width="match_parent"
@@ -80,13 +124,35 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="3">
-
+            <TextView
+                android:id="@+id/heart_btn"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/heart_cheak01"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+                android:textColor="#000000"
+                android:id="@+id/present"
+                android:textSize="15dp"
+                android:text="선물하기"
+                android:background="@drawable/pr_bar_01"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
             <Button
                 android:id="@+id/apply"
                 android:textColor="#ffffff"
                 android:textSize="15dp"
-                android:text="적용하기"
-                android:background="@drawable/buy_bar_02"
+                android:text="구매하기"
+                android:background="@drawable/buy_bar_01"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
                 android:layout_marginTop="15dp"
